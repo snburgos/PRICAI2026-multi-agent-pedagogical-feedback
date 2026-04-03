@@ -106,8 +106,6 @@ If you use this repository, please cite:
 }
 ```
 
-Replace author names and publication metadata with the final camera-ready bibliographic details.
-
 ## License
 
 This repository is released under the terms of the `LICENSE` file.
