@@ -55,7 +55,7 @@ Top-level contents:
 - `Feedback Statistics devset.ipynb`: Development split statistics and analysis.
 - `Feedback Statistics testset.ipynb`: Test split statistics and analysis.
 - `outputs/`: Generated scores, refinements, and checkpoints.
-- `BD/`: Model checkpoints and experiment artifacts used in comparative settings.
+- `BD/`: Model checkpoints and experiment artifacts used in comparative settings. Ask the authors for the model weights.
 
 Key output artifacts:
 
