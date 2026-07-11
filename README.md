@@ -100,7 +100,7 @@ If you use this repository, please cite:
 @inproceedings{from_evaluation_to_improvement_ectel2026,
 	title     = {From Evaluation to Improvement: Multi-Agent Pedagogical Refinement of LLM-Based Tutor Feedback},
 	author    = {Anonymous},
-	booktitle = {Proceedings of the 2026 European Conference on Technology Enhanced Learning (ECTEL)},
+	booktitle = {Proceedings of the 2026 Pacific Rim International Conference on Artificial Intelligence (PRICAI)},
 	year      = {2026}
 }
 ```
