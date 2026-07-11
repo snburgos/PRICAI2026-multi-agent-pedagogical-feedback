@@ -1,12 +1,11 @@
 # From Evaluation to Improvement: Multi-Agent Pedagogical Refinement of LLM-Based Tutor Feedback
 
-Official code repository for the ECTEL 2026 paper:
+Official code repository for the PRICAI 2026 paper:
 
 **From Evaluation to Improvement: Multi-Agent Pedagogical Refinement of LLM-Based Tutor Feedback**
 
 ## Abstract
-
-As Large Language Models (LLMs) increasingly power conversational AI tutors, a critical tension has emerged between technological fluency and pedagogical intentionality. Although LLMs can generate immediate responses, they often prioritize answer-giving over scaffolding, failing to provide the deliberate guidance necessary for student mastery. This paper introduces an open-source, multi-agent framework designed to transform AI tutor feedback from mere evaluation to intentional pedagogical refinement. Grounded in three core educational frameworks: formative feedback theory, the Zone of Proximal Development (ZPD), and Socratic questioning and a structured evaluation taxonomy, our system employs a modular architecture where specialized sub-agents evaluate tutor responses across four critical dimensions: mistake identification, mistake location, providing guidance, and actionability. Unlike traditional validation systems focused on reducing hallucinations, our framework utilizes an evaluation-to-improvement loop. When a response is flagged as pedagogically insufficient, a refinement agent uses the granular evaluation metrics as instructional intent to recalibrate the feedback, ensuring it remains supportive and cognitively demanding without revealing the final answer. We evaluate our framework using the MRBench dataset, which comprises diverse tutoring interactions in middle school mathematics. Results demonstrate that our iterative process successfully validated 84.4% of the tutor responses within a maximum of three iterations. Furthermore, an LLM-as-a-judge evaluation shows that our refinement process yields a 38.3% improvement in pedagogical alignment compared to single-agent baselines, achieving consistently high scores across all dimensions. By bridging the gap between automated generation and evidence-based instructional design, this work contributes to the mission of shaping AI tools that are purposeful, transparent, and centered on human educational values.
+As Large Language Models (LLMs) increasingly power conversational AI tutors, a critical tension has emerged between technological fluency and pedagogical intentionality. Although LLMs can generate immediate responses, they often prioritize answer-giving over scaffolding, thereby failing to provide the deliberate guidance necessary for student mastery. This paper introduces an open-source, multi-agent framework designed to transform AI tutor feedback from mere evaluation into intentional pedagogical refinement. Grounded in three core educational frameworks: formative feedback theory, the Zone of Proximal Development (ZPD) and Socratic questioning, as well as a structured evaluation taxonomy, our system employs a modular architecture where specialized sub-agents evaluate tutor responses across four critical dimensions: mistake identification, mistake location, providing guidance, and actionability. Unlike traditional validation systems focused on reducing hallucinations, our framework implements an evaluation-to-improvement loop. When a response is flagged as pedagogically insufficient, a refinement agent uses the granular evaluation metrics as instructional intent to recalibrate the feedback, ensuring it remains supportive and cognitively demanding without revealing the final answer. We evaluate our framework using the MRBench dataset, which comprises diverse tutoring interactions in middle school mathematics. Results demonstrate that our iterative process successfully refined 84.4% of the tutor responses within a maximum of three iterations. Furthermore, an LLM-as-a-judge evaluation shows that our refinement process yields a 38.3% improvement in pedagogical alignment compared to single-agent baselines, achieving consistently high scores across all dimensions. By bridging the gap between automated response generation and evidence-based instructional design, this work contributes to the development of AI tutoring systems that are purposeful, transparent, and centered on human educational values.
 
 ## Overview
 
@@ -39,7 +38,7 @@ These principles are operationalized through four evaluation dimensions:
 - **Providing guidance**
 - **Actionability**
 
-## Main Results (ECTEL 2026)
+## Main Results
 
 - **84.4%** of tutor responses validated within **3 iterations**.
 - **+38.3%** pedagogical alignment improvement over single-agent baselines (LLM-as-a-judge).
