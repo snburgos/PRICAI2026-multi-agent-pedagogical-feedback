@@ -1,11 +1,12 @@
-# From Evaluation to Improvement: Multi-Agent Pedagogical Refinement of LLM-Based Tutor Feedback
+# From Evaluation to Improvement: Multi-Agent Pedagogical Feedback of LLM Tutors Towards Improving Student Learning in Dialogues
 
 Official code repository for the PRICAI 2026 paper:
 
-**From Evaluation to Improvement: Multi-Agent Pedagogical Refinement of LLM-Based Tutor Feedback**
+**From Evaluation to Improvement: Multi-Agent Pedagogical Feedback of LLM Tutors Towards Improving Student Learning in Dialogues**
 
 ## Abstract
-As Large Language Models (LLMs) increasingly power conversational AI tutors, a critical tension has emerged between technological fluency and pedagogical intentionality. Although LLMs can generate immediate responses, they often prioritize answer-giving over scaffolding, thereby failing to provide the deliberate guidance necessary for student mastery. This paper introduces an open-source, multi-agent framework designed to transform AI tutor feedback from mere evaluation into intentional pedagogical refinement. Grounded in three core educational frameworks: formative feedback theory, the Zone of Proximal Development (ZPD) and Socratic questioning, as well as a structured evaluation taxonomy, our system employs a modular architecture where specialized sub-agents evaluate tutor responses across four critical dimensions: mistake identification, mistake location, providing guidance, and actionability. Unlike traditional validation systems focused on reducing hallucinations, our framework implements an evaluation-to-improvement loop. When a response is flagged as pedagogically insufficient, a refinement agent uses the granular evaluation metrics as instructional intent to recalibrate the feedback, ensuring it remains supportive and cognitively demanding without revealing the final answer. We evaluate our framework using the MRBench dataset, which comprises diverse tutoring interactions in middle school mathematics. Results demonstrate that our iterative process successfully refined 84.4% of the tutor responses within a maximum of three iterations. Furthermore, an LLM-as-a-judge evaluation shows that our refinement process yields a 38.3% improvement in pedagogical alignment compared to single-agent baselines, achieving consistently high scores across all dimensions. By bridging the gap between automated response generation and evidence-based instructional design, this work contributes to the development of AI tutoring systems that are purposeful, transparent, and centered on human educational values.
+
+As Large Language Models (LLMs) increasingly power conversational AI tutors, a critical tension has emerged between technological fluency and pedagogical intentionality. Although LLMs can generate immediate responses, they often prioritize answer-giving over scaffolding, thereby failing to provide the deliberate guidance necessary for student mastery. This paper introduces an open-source, multi-agent framework designed to transform AI tutor feedback from mere evaluation into intentional pedagogical refinement. Grounded in three core educational frameworks: formative feedback theory, the Zone of Proximal Development (ZPD) and Socratic questioning, as well as a structured evaluation taxonomy, our system employs a modular architecture where specialized sub-agents evaluate tutor responses across four critical dimensions: mistake identification, mistake location, providing guidance, and actionability. Unlike traditional validation systems focused on reducing hallucinations, our framework implements an evaluation-to-improvement loop. When a response is flagged as pedagogically insufficient, a refinement agent uses the granular evaluation metrics as instructional intent to recalibrate the feedback, ensuring it remains supportive and cognitively demanding without revealing the answer. We evaluate our framework using the MRBench dataset, which comprises diverse tutoring interactions in middle school mathematics. Results demonstrate that our iterative process successfully refined 77.1\% of the tutor responses. Furthermore, an LLM-as-a-judge evaluation shows that our refinement process yields a 38.3\% improvement in pedagogical alignment compared to the original single-agent responses, achieving consistently high scores. By bridging the gap between automated response generation and evidence-based instructional design, this work contributes to the development of AI tutoring systems that are purposeful, transparent, and centered on human educational values.
 
 ## Overview
 
@@ -48,13 +49,14 @@ These principles are operationalized through four evaluation dimensions:
 
 Top-level contents:
 
-- `Multi Agent System.ipynb`: End-to-end multi-agent pipeline.
-- `LLM-as-a-judge devset.ipynb`: Judge-based evaluation on development split.
-- `LLM-as-a-judge testset.ipynb`: Judge-based evaluation on test split.
-- `Feedback Statistics devset.ipynb`: Development split statistics and analysis.
-- `Feedback Statistics testset.ipynb`: Test split statistics and analysis.
+- `Multi_Agent_System.ipynb`: End-to-end multi-agent pipeline.
+- `LLM-as-a-judge_devset.ipynb`: Judge-based evaluation on development split.
+- `LLM-as-a-judge_testset.ipynb`: Judge-based evaluation on test split.
+- `Feedback_Statistics_devset.ipynb`: Development split statistics and analysis.
+- `Feedback_Statistics_testset.ipynb`: Test split statistics and analysis.
+- `Statistical_Analysis.ipynb`: Statistical analysis of the LLM-as-a-judge results.
 - `outputs/`: Generated scores, refinements, and checkpoints.
-- `BD/`: Model checkpoints and experiment artifacts used in comparative settings. Ask the authors for the model weights.
+- `BD/`: Model checkpoints and experiment artifacts used in comparative settings.
 
 Key output artifacts:
 
@@ -68,9 +70,9 @@ Key output artifacts:
 
 This project is notebook-centric. A typical workflow is:
 
-1. Open and run `Multi Agent System.ipynb` to generate/refine tutor feedback.
-2. Run `LLM-as-a-judge devset.ipynb` and/or `LLM-as-a-judge testset.ipynb` for automatic pedagogical scoring.
-3. Run `Feedback Statistics devset.ipynb` and `Feedback Statistics testset.ipynb` to reproduce summary figures and statistics.
+1. Open and run `Multi_Agent_System.ipynb` to generate/refine tutor feedback.
+2. Run `LLM-as-a-judge_devset.ipynb` and/or `LLM-as-a-judge_testset.ipynb` for automatic pedagogical scoring.
+3. Run `Feedback_Statistics_devset.ipynb` and `Feedback_Statistics_testset.ipynb` to reproduce summary figures and statistics.
 
 Make sure to have Python (https://www.python.org/downloads/) and Ollama (https://docs.ollama.com/quickstart) downloaded.
 
@@ -85,7 +87,6 @@ Make sure to have Python (https://www.python.org/downloads/) and Ollama (https:/
 ## Reproducibility Notes
 
 - The repository includes generated outputs to support result verification.
-- The `BD/` directory contains trained checkpoint artifacts used in experiment runs.
 - For strict reproducibility, use the same model versions, prompts, and judge configurations as in the notebooks.
 
 ## Ethical and Educational Considerations
@@ -97,9 +98,9 @@ This framework is designed for **supportive, scaffolded learning** and avoids an
 If you use this repository, please cite:
 
 ```bibtex
-@inproceedings{from_evaluation_to_improvement_ectel2026,
-	title     = {From Evaluation to Improvement: Multi-Agent Pedagogical Refinement of LLM-Based Tutor Feedback},
-	author    = {Anonymous},
+@inproceedings{from_evaluation_to_improvement_pricai2026,
+	title     = {From Evaluation to Improvement: Multi-Agent Pedagogical Feedback of LLM Tutors Towards Improving Student Learning in Dialogues},
+	author    = {Burgos-Mart{\'\i}nez, Sebasti{\'a}n and Gan, Wenbin and Sun, Yuan},
 	booktitle = {Proceedings of the 2026 Pacific Rim International Conference on Artificial Intelligence (PRICAI)},
 	year      = {2026}
 }
