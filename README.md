@@ -56,7 +56,7 @@ Top-level contents:
 - `Feedback_Statistics_testset.ipynb`: Test split statistics and analysis.
 - `Statistical_Analysis.ipynb`: Statistical analysis of the LLM-as-a-judge results.
 - `outputs/`: Generated scores, refinements, and checkpoints.
-- `BD/`: Model checkpoints and experiment artifacts used in comparative settings.
+- `BD/`: Model checkpoints and experiment artifacts used in comparative settings. To obtain the BD folder check the reproducibility notes.
 
 Key output artifacts:
 
@@ -87,6 +87,7 @@ Make sure to have Python (https://www.python.org/downloads/) and Ollama (https:/
 ## Reproducibility Notes
 
 - The repository includes generated outputs to support result verification.
+- The BD/ directory contains trained checkpoint artifacts used in experiment runs. Download the model weights from: https://uccl0-my.sharepoint.com/:u:/g/personal/snburgos_uc_cl/IQBG5piGlx-rSY8KVon7ckB6AZswWsX6uKe1B5OzP88WoTg?e=Q3gwLU
 - For strict reproducibility, use the same model versions, prompts, and judge configurations as in the notebooks.
 
 ## Ethical and Educational Considerations
